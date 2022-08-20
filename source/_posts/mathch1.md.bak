@@ -1,0 +1,154 @@
+title: 數學複習第一單元:數與式
+author: W_X_Dai
+math: true
+date: 2022-05-29 17:00:00
+tags: math
+categories: math
+---
+
+大滿貫複習講義第一單元:數與式
+
+錯題列表
+
+<!--more-->
+
+<HTML>
+<script>
+	function a(){
+		var q=[12,130,3,45,101,1235,235,20],correct=[];
+		var scre=0;
+		for(var i=0;i<8;++i){
+			
+			var id="ans"+(i+1);
+			var x=document.getElementById(id).value;
+			
+			if(x==q[i]){
+				++scre;
+				correct[i]=1;
+			}
+			else{
+				correct[i]=0;
+			}
+			
+		}
+		
+		var out="correct : "+scre+"/8\n";
+		for(var i=0;i<8;++i){
+			out+=(i+1)+" : ";
+			if(correct[i])out+="correct";
+			else out+="incorrect";
+			out+="\n"
+		}
+		alert(out);
+		var _confirm=confirm("是否顯示詳解?");
+		
+		if(_confirm){
+			window.open("https://w-x-dai.github.io/2022/05/14/testout/");
+		}
+		
+		//document.write(out);
+	}
+</script>
+
+## 第一題
+
+數線上有原點$O$以及$A(-2),B(10),C(x)$三點，其中，$\overline{BC}<\overline{AC}<\overline{OB}$
+
+設$x\in\;(a,b)$，則$a+b=$
+<input type="text" input id="ans1" type=var><br><br>
+
+
+## 第二題
+
+有一種飛彈飛行速度為$3\;km/sec$，從$A$往$100km$以外的$P$點等速直線發射這種飛彈，飛彈飛行了$t$秒後落在$B$點，且$\overline{BP}=d,d\in\;[2,5]$
+
+設t的最大值為$a$，最小值為$b$，求$a+3b=$
+<input type="text" input id="ans2" type=var><br><br>
+
+## 第三題
+
+本題為是非題，請輸入錯誤的敘述數量
+
+敘述一、若$x\in \mathbb{R}$，則$\sqrt{x^2}=x$<br>
+敘述二、$\sqrt{5-2\sqrt{6}}=\sqrt{(\sqrt{2}-\sqrt{3})^2}=\sqrt{2}-\sqrt{3}$<br>
+敘述三、若$m,n\in \mathbb{N},m+2n=10$，則$mn$之最大值為$\cfrac{25}{2}$
+
+這三個敘述中，有幾個是錯的?
+<input type="text" input id="ans3" type=var><br><br>
+
+## 第四題
+
+本題為多選題，請由小到大輸入答案。若答案為(1)、(3)、(4) 則請輸入134，143、1,3,4都是不合法的
+
+已知$\;p=\sqrt{c+2\sqrt{d}}=\sqrt{a}+\sqrt{b}$，$a,b,c,d\in \mathbb{R}^+$，$b\ge a$。
+以下為選項:
+
+(1) 若$c=7,d=6$，則$a=2,b=3$
+
+(2) $\sqrt{c-2\sqrt{d}}=\sqrt{a}-\sqrt{b}$
+
+(3) $\sqrt{c+2\sqrt{d}}$之倒數為$\sqrt{c-2\sqrt{d}}$
+
+(4) 若$c=\cfrac{7}{2},d=3$，則$a^2+b^2=\cfrac{25}{4}$
+
+(5) $c^2\ge 4d$
+
+答案:
+<input type="text" input id="ans4" type=var><br><br>
+
+## 第五題
+
+若$x\in [-100,100]$，設不等式$|x-3|\le |x+2|$中，$x$之最大值為$a$，$x$之最小值為$b$
+
+求$a+2b=$
+<input type="text" input id="ans5" type=var><br><br>
+
+## 第六題
+
+本題為多選題，請由小到大輸入答案。若答案為(1)、(3)、(4) 則請輸入134，143、1,3,4都是不合法的
+
+請在下列有關循環小數的敘述中，選出正確的答案
+
+(1) $0.\overline{23}=\cfrac{23}{99}$
+
+(2) 若$p=123.\overline{23}-0.\overline{32}$，則$p\in \mathbb{Q}$
+
+(3) $\cfrac{2.3\times 10^9}{99}$化為小數後，小數點後第一位數字為$2$
+
+(4) $\cfrac{2.3\times 10^8}{99}$化為小數後，小數點後第一位數字為$2$
+
+(5) 若$p=\cfrac{2.3\times 10^9}{99}-123.\overline{23}$，則$p\in \mathbb{R}$
+
+答案:
+<input type="text" input id="ans6" type=var><br><br>
+
+## 第七題
+
+本題為多選題，請由小到大輸入答案。若答案為(1)、(3)、(4) 則請輸入134，143、1,3,4都是不合法的
+
+已知$a>1$，數線上相異三點座標分別為$A(a),B(1+\cfrac{2}{a}),P(2)$，請選出正確的選項
+
+(1) 若$B$點座標為$\cfrac{3}{2}$，$A$點座標為$1$
+
+(2) 若$A$在$P$點右方，$B$必定在$P$點左方
+
+(3) 若$A$在$P$點左方，$B$必定在$P$點左方
+
+(4) $\overline{BP}=|1+\cfrac{a}{2}|$
+
+(5) $\overline{AP}>\overline{BP}$
+
+
+答案:
+<input type="text" input id="ans7" type=var><br><br>
+
+## 第八題
+
+設$a,b,c$為介於$1\sim 9$之自然數，若$\cfrac{699}{900}<0.a\overline{bc}<\cfrac{700}{900}$
+
+求$a+b+c=$
+<input type="text" input id="ans8" type=var><br><br>
+
+<button type="button" onclick="a()">確認送出</button>
+
+</HTML>

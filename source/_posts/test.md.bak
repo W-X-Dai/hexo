@@ -1,0 +1,57 @@
+title: 這是一個算數練習
+author: W_X_Dai
+math: true
+date: 2022-05-14 22:46:03
+tags:
+---
+
+算數練習#1
+
+<!--more-->
+
+<HTML>
+<script>
+	function a(){
+		var q=[2,0,15,81,561],correct=[];
+		var scre=0;
+		for(var i=0;i<5;++i){
+			
+			var id="ans"+(i+1);
+			var x=document.getElementById(id).value;
+			if(x==q[i]){
+				scre+=20;
+				correct[i]=1;
+			}
+			else{
+				correct[i]=0;
+			}
+			
+		}
+		
+		var out="score : "+scre+"\n";
+		for(var i=0;i<5;++i){
+			out+=(i+1)+" : ";
+			if(correct[i])out+="correct";
+			else out+="incorrect";
+			out+="\n"
+		}
+		alert(out);
+		var _confirm=confirm("是否顯示詳解?");
+		
+		if(_confirm){
+			window.open("http://localhost:4000/2022/05/14/testout/");
+		}
+		
+		//document.write(out);
+	}
+</script>
+
+
+1+1		<br><input type="text" input id="ans1" type=var><br><br>
+4-4		<br><input type="text" input id="ans2" type=var><br><br>
+3x5		<br><input type="text" input id="ans3" type=var><br><br>
+405/5	<br><input type="text" input id="ans4" type=var><br><br>
+555+6	<br><input type="text" input id="ans5" type=var><br><br>
+<button type="button" onclick="a()">驗證</button>
+
+</HTML>
